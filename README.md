@@ -1,26 +1,38 @@
-# CPyProjectTemplate
-Put a description for your project here!
-This repo is a template VS code project for CircuitPython projects that automatically uploads your code to the board when you press F5. Requires F5Anything extension.
-## Use
-### Every new project:
-1. Make a GitHub account if you don't have one with your normal school credentials and sign into it.
-2. Click the big green Use This Template button at the top of this page.
-3. Name the new repository something appropriate to the purpose of your project (Your first one should probably be named `CircuitPython`).
-4. Hit "Create repository from template." (The default settings should be fine.)
-5. Open VS Code on your machine. Click Clone Repository.
-6. Paste in the link to the new repository you've just created from the template and hit enter.
-7. For the location, select the "STUDENT" drive if you have it or the document folder if you don't.
-8. Install the reccomended extensions when you get that popup in the lower right corner.
-### To commit:
-1. Go to the little branch icon in the left bar.
-2. Click the + icon next  to the files you want to commit.
-3. Write a message that descibes your changes and hit commit.
-4. If you get an error about user.name and user.email, see the next section.
-5. Click the "Sync changes" button.
-### If you get an error about user.name and user.email
-1. Open Git Bash.
-2. FIlling in your actual information, run the following commands. Spelling must match exactly:
-```
-git config --global user.name YOURUSERNAME
-git config --global user.email YOURSCHOOLEMAIL
-```
+# ENGINEERING Q3 NOTEBOOK
+
+### this note book documents the work that was completed for the third quarter of the 22-23 school year. Most of the Quarter was spent doing CAD practice to prepare for the OnShape exam. The end of the quarter was spent doing code that relates to PID concepts.
+
+## Credits
+### Code help from @pweder69 on Github 
+
+
+## Projects:
+
+## 1. OCP Single Part
+ 
+### AKA "The Hanger" this was a very simple part to make. I learned how to use the hole tool to counterbore spots for screw heads. I also used three point arcs and relied on constraints instead of dimensions.
+
+
+
+
+## 2. OCP Multipart Studio
+
+### The Multipart practice assignment was more chalenging because we had to make three different parts work together. Similar to the cylinder the Mic stand had to be built in order often using other parts to determine the dimensions of other parts. 
+
+
+## 3. OCP Assemblies
+
+### The Assemblies assignment was to assemble a pair of vice grips from parts that were provided. During this assignment I learned more about mates. I used parallel, fastened, revolute, and slider mates. This assignment helped me prepare of the OCE because it taught me how to mate and measure parts.
+
+
+## 4. OCP General Knowledge
+
+## 5. OCP THE SWING ARM
+
+## 6. Temperature Sensor
+
+## 7. Rotary Encoder
+
+
+
+
