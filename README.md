@@ -8,6 +8,8 @@
 
 ## Projects:
 
+### OCE = OnShape Certification, Exam OCP= OnShape Certification Prep
+
 ## 1. OCP Single Part
  
 ### AKA "The Hanger" this was a very simple part to make. I learned how to use the hole tool to counterbore spots for screw heads. I also used three point arcs and relied on constraints instead of dimensions.
