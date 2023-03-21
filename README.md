@@ -35,6 +35,18 @@
 
 ## 5. OCP THE SWING ARM
 
+### This was the same part that we made in Q1. We did this to see if our knowledge had grown after completing the practice.
+
+### Replicated the provided design using the images provided whilst not relying on only dimensions. I heavily used tools like equal, parallel, and symmetric.
+
+### There is only one part in the assignment but the part is very complex and has holes, filets and, chamfers on every single plane.
+
+### Weight: 2355.7 g  https://cvilleschools.onshape.com/documents/a5fd8d22b575fddb2bdee574/w/76f65086d2b77c85ffe6fc60/e/afefe01db5f326c914c81df6 
+
+## Reflection
+
+### The original image was black and white so it was hard to see what the final should look like. Also it was really easy to try to use dimensions on everything but it will save you so much time if you use constrains that change as needed but will also keep the structure of the shape better.
+
 ## 6. Temperature Sensor
 
 ## 7. Rotary Encoder
