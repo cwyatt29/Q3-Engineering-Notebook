@@ -29,6 +29,10 @@
 
 ## 4. OCP General Knowledge
 
+### This was a simple canvas quiz that gave me some practice of the OCE written test. I did not do very well so I knew that I needed to study the general knowledge before I took the test.
+
+
+
 ## 5. OCP THE SWING ARM
 
 ## 6. Temperature Sensor
