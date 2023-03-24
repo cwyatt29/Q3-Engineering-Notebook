@@ -46,5 +46,16 @@
 
 ## 6. Temperature Sensor
 
+
+
+
+
+
+
+![Temp_Sensor](https://github.com/cwyatt29/Q3-Engineering-Notebook/blob/master/IMG_0014.MOV?raw=true)
+
+
+
 ## 7. Rotary Encoder
 
+![Rot_Encoder](https://github.com/cwyatt29/Q3-Engineering-Notebook/blob/master/ROTENCODER_REAL.MOV?raw=true)
