@@ -46,7 +46,7 @@ Replicated the provided design using the images provided whilst not relying on o
 ## 6. Temperature Sensor
 
 
-Used Circuit Python and a temp sensor to detect and display the current temp on an LCD screen. I learned that your time is better spent looking for someone elses code rather than writing your own code. Ciruit Python tends to be unesscary for easier tasks that dont require multiple outputs. This assignment is much simplier to do in C++
+Used Circuit Python and a temp sensor to detect and display the current temp on an LCD screen. I learned that your time is better spent looking for someone elses code rather than writing your own code. Ciruit Python tends to be unecessary for easier tasks that dont require multiple outputs. This assignment is much simplier to do in C++
 
 
 
@@ -56,5 +56,7 @@ Used Circuit Python and a temp sensor to detect and display the current temp on 
 
 
 ## 7. Rotary Encoder
+
+The RE is similar to a potentionmeter but it can continuously spin and has a built in button. I like the RE and I think that it could be used in projects later on. I again think that Circuit Py was Unnecessary for this but its not up to me.
 
 ![Rot_Encoder](https://github.com/cwyatt29/Q3-Engineering-Notebook/blob/master/ROTENCODER_REAL.MOV?raw=true)
