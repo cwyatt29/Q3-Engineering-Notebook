@@ -47,7 +47,7 @@
 ## 6. Temperature Sensor
 
 
-
+Used Circuit Python and a temp sensor to detect and display the current temp on an LCD screen. I learned that your time is better spent looking for someone elses code rather than writing your own code. Ciruit Python tends to be unesscary for easier tasks that dont require multiple outputs. This assignment is much simplier to do in C++
 
 
 
