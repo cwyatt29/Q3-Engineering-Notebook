@@ -52,11 +52,105 @@ Used Circuit Python and a temp sensor to detect and display the current temp on 
 
 
 ![Temp_Sensor](https://github.com/cwyatt29/Q3-Engineering-Notebook/blob/master/IMG_0014.MOV?raw=true)
+```python
+
+import board
+import analogio
+import time
+from lcd.lcd import LCD
+
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+
+TMP36_PIN = board.A0  # Analog input connected to TMP36 output.
+
+i2c = board.I2C()
+
+# some LCDs are 0x3f... some are 0x27.
+lcd = LCD(I2CPCF8574Interface(i2c,0x27), num_rows=2, num_cols=16)
+# Function to simplify the math of reading the temperature.
+lcd.set_cursor_pos(0,0)
+lcd.print("temp:")
+def tmp36_temperature_C(analogin):
+    millivolts = analogin.value * (analogin.reference_voltage * 1000 / 65535)
+    return (millivolts - 500) / 10
 
 
+tmp36 = analogio.AnalogIn(TMP36_PIN)
+
+
+while True:
+   
+    temp_C = tmp36_temperature_C(tmp36)
+   
+    temp_F = (temp_C * 9/5) + 32
+   
+    print("Temperature: {}C {}F".format(temp_C, temp_F))
+    time.sleep(1.0)
+    lcd.set_cursor_pos(0, 6)
+    lcd.print( "{}C " .format(temp_C)) 
+    lcd.set_cursor_pos(1,0)
+    lcd.print( "{}F" .format(temp_F)) 
+```
 
 ## 7. Rotary Encoder
 
 The RE is similar to a potentionmeter but it can continuously spin and has a built in button. I like the RE and I think that it could be used in projects later on. I again think that Circuit Py was Unnecessary for this but its not up to me.
 
 ![Rot_Encoder](https://github.com/cwyatt29/Q3-Engineering-Notebook/blob/master/ROTENCODER_REAL.MOV?raw=true)
+```python
+#CREDIT TO PAUL WEDER
+import rotaryio
+import time
+import board
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+import digitalio
+import neopixel
+
+dot = neopixel.NeoPixel(board.NEOPIXEL, 1)
+dot.brightness = 0.5 
+
+i2c = board.I2C()
+lcd = LCD(I2CPCF8574Interface(i2c, 0x3f), num_rows=2, num_cols=16)
+
+
+enc = rotaryio.IncrementalEncoder(board.D9, board.D8,2)
+last_position = None
+
+encBtn = digitalio.DigitalInOut(board.D7)
+encbtn = digitalio.Direction.INPUT
+encbtn  = digitalio.Pull.UP
+
+global prevState
+
+def btnControl(buttonVal ,out):
+    global prevState
+    if buttonVal and buttonVal != prevState:
+        prevState = True
+        if out == 0:
+            dot.fill((255,0,0))
+        elif out == 1:
+                dot.fill((255,255,0))
+        else:
+                dot.fill((0,255,0))
+    elif  not buttonVal:
+        prevState = False
+     
+        
+
+def retEnc(x):
+    array = ["stop","caution","go"] 
+    output = x%3
+    btnControl(encBtn.value,output)
+    return array[output]
+
+
+
+
+while True:
+    lcd.print(retEnc(enc.position))
+    time.sleep(.05)
+    lcd.clear()
+    print(f"{retEnc(enc.position)} {enc.position} {encBtn.value}")
+```
+
