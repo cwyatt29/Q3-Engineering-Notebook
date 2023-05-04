@@ -154,7 +154,38 @@ while True:
     print(f"{retEnc(enc.position)} {enc.position} {encBtn.value}")
 ```
 
-## 8. OnShape Certification
+Phtoto-Interrupter
+Description and Code
+For this assignment we are soposed to use monotomic time and sleep and the task is to print out when we get interuppted.
+```
+import time
+import digitalio
+import board
+
+photoI = digitalio.DigitalInOut(board.D7)
+photoI.direction = digitalio.Direction.INPUT
+photoI.pull = digitalio.Pull.UP
+
+last_photoI = True
+last_update = -4
+
+photoICrosses = 0
+
+while True:
+    if time.monotonic()-last_update > 4:
+        print(f"The number of crosses is {photoICrosses}")
+        last_update = time.monotonic()
+    
+    if last_photoI != photoI.value and not photoI.value:
+        photoICrosses += 1
+    last_photoI = photoI.value
+```
+_Code From: Pweder69_
+
+Reflection
+
+
+## 9. OnShape Certification
 
 ### On the OnShape associate exam I scored a 79 and I am now an certified OnShape associate. The exam was very similar to the practice assignments that we had done. I thought that the modeling portion was a little easier than the assignments that we did. The hardest part for me was the knowledge portion which asked a lot of questions about team optimization which I had little expirence with. 
 
