@@ -156,4 +156,5 @@ while True:
 
 ## 8. OnShape Certification
 
+On the OnShape associate exam I scored a 79 and I am now an certified OnShape associate. The exam was very similar to the practice assignments that we had done. I thought that the modeling portion was a little easier than the assignments that we did. The hardest part for me was the knowledge portion which asked a lot of questions about team optimization which I had little expirence with. 
 
