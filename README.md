@@ -154,3 +154,6 @@ while True:
     print(f"{retEnc(enc.position)} {enc.position} {encBtn.value}")
 ```
 
+## 8. OnShape Certification
+
+
