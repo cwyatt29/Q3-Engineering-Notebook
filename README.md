@@ -157,8 +157,8 @@ while True:
 ## Phtoto-Interrupter
 
 
-# Description and Code
-For this assignment we are soposed to use monotomic time and sleep and the task is to print out when we get interuppted.
+### Description and Code
+Use a photo intruppter to make our LCD's print messages when the signal is interupted. 
 
 ```
 import time
@@ -185,7 +185,7 @@ while True:
 ```
 _Code From: Pweder69_
 
-# Reflection
+### Reflection
 
 I have used photo interrupters before and they arent very complicated. I find that their awkward dimensions make them chalenging to get consistancy but in certain aplications they are very accurate.
 
