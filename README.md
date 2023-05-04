@@ -154,9 +154,12 @@ while True:
     print(f"{retEnc(enc.position)} {enc.position} {encBtn.value}")
 ```
 
-Phtoto-Interrupter
-Description and Code
+## Phtoto-Interrupter
+
+
+# Description and Code
 For this assignment we are soposed to use monotomic time and sleep and the task is to print out when we get interuppted.
+
 ```
 import time
 import digitalio
@@ -182,7 +185,9 @@ while True:
 ```
 _Code From: Pweder69_
 
-Reflection
+# Reflection
+
+I have used photo interrupters before and they arent very complicated. I find that their awkward dimensions make them chalenging to get consistancy but in certain aplications they are very accurate.
 
 
 ## 9. OnShape Certification
